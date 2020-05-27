@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAlarmActivity">
+
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="438dp"
+        android:layout_height="350dp"
+        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:text="On / Off"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker2"
+        tools:layout_editor_absoluteX="225dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="63dp"
+        android:layout_height="40dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Wednesday"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friday"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Satturday"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="91dp"
+        android:layout_height="32dp"
+        android:text="Sunday"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="Monday to Friday"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox9"
+        app:layout_constraintEnd_toStartOf="@+id/switch2"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Every day"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
