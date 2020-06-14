@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAlarmActivity">
+
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="438dp"
+        android:layout_height="350dp"
+        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        andoid:onClick="setOn"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:text="On / Off"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker2"
+        tools:layout_editor_absoluteX="225dp" />
+
+    <Button
+        android:id="@+id/OkButton"
+        android: onClick="SafeOptions"
+        android:layout_width="63dp"
+        android:layout_height="40dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="Monday to Friday"
+        app:layout_constraintEnd_toStartOf="@+id/switch2"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker2" />
+
+    <Button
+        android:id="@+id/monday"
+        android:layout_width="38dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="changeColor"
+        android:text="M "
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <Button
+        android:id="@+id/wednesday"
+        android:layout_width="38dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="changeColor"
+        android:text="W"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <Button
+        android:id="@+id/tuesday"
+        android:layout_width="39dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="changeColor"
+        android:text="T"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <Button
+        android:id="@+id/satturday"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="changeColor"
+        android:text="S"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="428dp" />
+
+    <Button
+        android:id="@+id/sunday"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="changeColor"
+        android:text="S"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="428dp" />
+
+    <Button
+        android:id="@+id/friday"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="changeColor"
+        android:text="F"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <Button
+        android:id="@+id/thursday"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="changeColor"
+        android:text="T"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
