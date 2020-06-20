@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Wecker</string>
+    <string name="done">Done</string>
+    <string name="monday_to_friday">Monday to Friday</string>
+
+    <string name="on_off">On/Off</string>
+    <string name="textview">TextView</string>
+    <string name="m">M</string>
+    <string name="w">W</string>
+    <string name="s">S</string>
+
+    <string name="f">F</string>
+    <string name="t">T</string>
+
 </resources>
